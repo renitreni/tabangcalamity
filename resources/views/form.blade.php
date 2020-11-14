@@ -39,15 +39,19 @@
                             <label>Araw ng kapanganakan</label>
                             <input type="date" name="birth_date" class="form-control">
                         </div>
-                        <div class="col-md-5 mt-2">
+                        <div class="col-md-4 mt-2">
                             <label>E-mail / Facebook</label>
                             <input name="email" class="form-control">
                         </div>
-                        <div class="col-md-3 mt-2">
-                            <label>Numberong pwedeng tawagan</label>
+                        <div class="col-md-4 mt-2">
+                            <label>Numerong pwedeng tawagan</label>
                             <input name="contact_no" class="form-control">
                         </div>
                         <div class="col-md-4 mt-2">
+                            <label>Ibang Numerong pwedeng tawagan</label>
+                            <input name="contact_no_other" class="form-control">
+                        </div>
+                        <div class="col-md-3 mt-2">
                             <label>Porbinsya</label>
                             <select name="province" class="form-control">
                                 <option value="marikina">Marikina</option>
@@ -55,10 +59,18 @@
                             </select>
                         </div>
                         <div class="col-md-4 mt-2">
+                            <label>Tulong na kailangan</label>
+                            <select name="province" class="form-control">
+                                <option value="medical assistance">Medical Assitance</option>
+                                <option value="relief goods">Relief Goods</option>
+                                <option value="emergency">Emergency</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mt-2">
                             <label>Baranggay / Zone</label>
                             <input name="zone" class="form-control">
                         </div>
-                        <div class="col-md-8 mt-2">
+                        <div class="col-md-12 mt-2">
                             <label>Address</label>
                             <input name="address" class="form-control">
                         </div>
@@ -69,14 +81,6 @@
                         <div class="col-md-4 mt-2">
                             <label>Pangalan ng Mayor</label>
                             <input name="name_of_mayor" class="form-control">
-                        </div>
-                        <div class="col-md-4 mt-2">
-                            <label>Tulong na kailangan</label>
-                            <select name="province" class="form-control">
-                                <option value="medical assistance">Medical Assitance</option>
-                                <option value="relief goods">Relief Goods</option>
-                                <option value="emergency">Emergency</option>
-                            </select>
                         </div>
                         <div class="col-md-12 mt-2">
                             <label>Salaysay</label>
