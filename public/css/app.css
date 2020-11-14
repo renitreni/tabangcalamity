@@ -10903,3 +10903,8 @@ a.text-dark:focus {
   }
 }
 
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+

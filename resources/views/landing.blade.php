@@ -6,10 +6,13 @@
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Tabang Calamity</h1>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">
-                    Provides communities and responders with behavioral health resources that help them prepare,
-                    respond, and recover from disasters.
+                    Kailangan mo tulong. Pindotin mo ako. Nandian ako sa tabi mo. Hindi ka nag iisa.
+                    <br><br>
+                    <i>Masapul mo't Saranay, pisilin nak,
+                        adda ak lng abay mo,
+                        dika't agmaymaysa.</i>
                 </h2>
-                <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>
+                <a class="btn btn-primary js-scroll-trigger" href="{{ route('form') }}">Request Help</a>
             </div>
         </div>
     </header>

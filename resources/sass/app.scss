@@ -6,3 +6,8 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
