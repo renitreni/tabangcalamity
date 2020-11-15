@@ -11,3 +11,33 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+
+.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.sidebar {
+    width: 167px !important;
+}
+
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+    margin-bottom: 3px;
+}
+
+.sidebar .nav .nav-item {
+    padding: 0px 2rem;
+}
+
+.navbar .navbar-brand-wrapper {
+    width: 168px;
+}
+
+.navbar .navbar-menu-wrapper {
+    padding-left: 0;
+    width: calc(100% - 168px);
+}
+
+.main-panel {
+    width: calc(100% - 168px);
+}

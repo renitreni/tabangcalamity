@@ -23,14 +23,16 @@
                     </p>
                 </div>
                 <div class="col-lg-12 mx-auto">
-                    <form class="row mb-5">
+                    <form class="row mb-5" method="POST" action="{{ route('form.send') }}"
+                          enctype="multipart/form-data">
+                        @csrf
                         <div class="col-md-5 mt-2">
                             <label>Buong Pangalan</label>
                             <input name="fullname" class="form-control">
                         </div>
                         <div class="col-md-4 mt-2">
                             <label>Kasarian</label>
-                            <select name="province" class="form-control">
+                            <select name="gender" class="form-control">
                                 <option value="Female">Female</option>
                                 <option value="Male">Male</option>
                             </select>
@@ -60,7 +62,7 @@
                         </div>
                         <div class="col-md-4 mt-2">
                             <label>Tulong na kailangan</label>
-                            <select name="province" class="form-control">
+                            <select name="assistance" class="form-control">
                                 <option value="medical assistance">Medical Assitance</option>
                                 <option value="relief goods">Relief Goods</option>
                                 <option value="emergency">Emergency</option>
@@ -95,19 +97,19 @@
                         <div class="form-group col-md-4">
                             <div class="form-group">
                                 <label>Image 1</label>
-                                <input type="file" name="image1" class="form-control-file">
+                                <input type="file" name="image1" class="form-control-file" style="color: antiquewhite;">
                             </div>
                         </div>
                         <div class="form-group col-md-4">
                             <div class="form-group">
                                 <label>Image 2</label>
-                                <input type="file" name="image2" class="form-control-file">
+                                <input type="file" name="image2" class="form-control-file" style="color: antiquewhite;">
                             </div>
                         </div>
                         <div class="form-group col-md-4">
                             <div class="form-group">
                                 <label>Image 3</label>
-                                <input type="file" name="image3" class="form-control-file">
+                                <input type="file" name="image3" class="form-control-file" style="color: antiquewhite;">
                             </div>
                         </div>
                         <div class="form-group col-md-12 mt-3">

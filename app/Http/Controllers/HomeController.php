@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HelpRequest;
 use Illuminate\Http\Request;
+use Yajra\DataTables\DataTables;
 
 class HomeController extends Controller
 {
@@ -24,5 +26,10 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function table()
+    {
+        return DataTables::of(HelpRequest::all())->make(true);
     }
 }

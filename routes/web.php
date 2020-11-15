@@ -13,14 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-})->name('landing');
+Route::get('/', [\App\Http\Controllers\PublicController::class, 'pageLanding'])->name('landing');
 
-Route::get('/form', function () {
-    return view('form');
-})->name('form');
+Route::get('/form', [\App\Http\Controllers\PublicController::class, 'pageForm'])->name('form');
+Route::post('/form/send', [\App\Http\Controllers\PublicController::class, 'sendForm'])->name('form.send');
 
 Auth::routes();
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::post('/home/table', [App\Http\Controllers\HomeController::class, 'table'])->name('home.table');
+});
