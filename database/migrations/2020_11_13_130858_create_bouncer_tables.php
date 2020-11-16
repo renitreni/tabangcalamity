@@ -29,8 +29,8 @@ class CreateBouncerTables extends Migration
 
         Schema::create(Models::table('roles'), function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('title')->nullable();
+            $table->string('name', 200);
+            $table->string('title', 200)->nullable();
             $table->integer('level')->unsigned()->nullable();
             $table->integer('scope')->nullable()->index();
             $table->timestamps();
@@ -45,9 +45,9 @@ class CreateBouncerTables extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('role_id')->unsigned()->index();
             $table->bigInteger('entity_id')->unsigned();
-            $table->string('entity_type');
+            $table->string('entity_type', 200);
             $table->bigInteger('restricted_to_id')->unsigned()->nullable();
-            $table->string('restricted_to_type')->nullable();
+            $table->string('restricted_to_type', 200)->nullable();
             $table->integer('scope')->nullable()->index();
 
             $table->index(
@@ -64,7 +64,7 @@ class CreateBouncerTables extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('ability_id')->unsigned()->index();
             $table->bigInteger('entity_id')->unsigned()->nullable();
-            $table->string('entity_type')->nullable();
+            $table->string('entity_type', 200)->nullable();
             $table->boolean('forbidden')->default(false);
             $table->integer('scope')->nullable()->index();
 
