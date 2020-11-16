@@ -56,6 +56,7 @@
                         <div class="col-md-3 mt-2">
                             <label>Porbinsya</label>
                             <select name="province" class="form-control">
+                                <option value="marinduque">Marinduque</option>
                                 <option value="marikina">Marikina</option>
                                 <option value="cagayan de oro">Cagayan De Oro</option>
                             </select>
