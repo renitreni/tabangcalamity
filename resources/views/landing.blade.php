@@ -6,7 +6,7 @@
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Tabang Calamity</h1>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">
-                    Kailangan mo tulong. Pindotin mo ako. Nandian ako sa tabi mo. Hindi ka nag iisa.
+                    Kailangan mo tulong. Pindutin mo ako. Nandyan ako sa tabi mo. Hindi ka nag iisa.
                     <br><br>
                     <i>Masapul mo't Saranay, pisilin nak,
                         adda ak lng abay mo,
