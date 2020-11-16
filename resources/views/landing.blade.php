@@ -12,7 +12,7 @@
                         adda ak lng abay mo,
                         dika't agmaymaysa.</i>
                 </h2>
-                <a class="btn btn-primary js-scroll-trigger" href="{{ route('form') }}">Request Help</a>
+                <a class="btn btn-success js-scroll-trigger" href="{{ route('form') }}">Pindutin para sa Tulong</a>
             </div>
         </div>
     </header>
