@@ -68,8 +68,8 @@
                                             Marikina
                                         </option>
                                         <option
-                                            {{ $user->province != 'cagayan de oro' ?'': 'selected' }} value="cagayan de oro">
-                                            Cagayan De Oro
+                                            {{ $user->province != 'cagayan province' ?'': 'selected' }} value="cagayan province">
+                                            Cagayan Province
                                         </option>
                                     </select>
                                 </div>
