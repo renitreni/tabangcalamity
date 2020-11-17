@@ -30,7 +30,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::post('/home/table', [App\Http\Controllers\HomeController::class, 'table'])->name('home.table');
 
-    Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users');
+    Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users')->middleware('can:admin');
     Route::post('/users/table', [App\Http\Controllers\UserController::class, 'table'])->name('users.table');
     Route::post('/users/register', [App\Http\Controllers\UserController::class, 'register'])->name('users.register');
     Route::get('/users/create', [App\Http\Controllers\UserController::class, 'create'])->name('users.create');

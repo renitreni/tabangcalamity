@@ -79,7 +79,7 @@
                                         <option value="admin" {{ $user->position != 'admin' ?'': 'selected' }}>
                                             Admin
                                         </option>
-                                        <option value="admin" {{ $user->position != 'user' ?'': 'selected' }}>
+                                        <option value="user" {{ $user->position != 'user' ?'': 'selected' }}>
                                             User
                                         </option>
                                     </select>
