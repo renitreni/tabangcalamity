@@ -69,5 +69,9 @@
 <script src="{{ asset('theme/grayscale/js/scripts.js') }}"></script>
 @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 @yield('scripts')
+<!--
+Developer: Renier R. Trenuela II
+Year developed: 2020
+-->
 </body>
 </html>
