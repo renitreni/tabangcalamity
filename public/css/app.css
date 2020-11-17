@@ -10940,10 +10940,6 @@ a.text-dark:focus {
 }
 
 .main-panel {
-  width: calc(100% - 168px);
-}
-
-table.dataTable {
-  margin: 0 0 !important;
+  width: 100%;
 }
 
