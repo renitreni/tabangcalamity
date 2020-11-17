@@ -76,7 +76,11 @@
                                 <div class="form-group row">
                                     <label for="password-confirm">{{ __('Position') }}</label>
                                     <select name="position" class="form-control">
-                                        <option value="admin" {{ $user->province != 'admin' ?'': 'selected' }}>Admin
+                                        <option value="admin" {{ $user->position != 'admin' ?'': 'selected' }}>
+                                            Admin
+                                        </option>
+                                        <option value="admin" {{ $user->position != 'user' ?'': 'selected' }}>
+                                            User
                                         </option>
                                     </select>
                                 </div>

@@ -64,7 +64,8 @@
                                 <div class="form-group row">
                                     <label for="password-confirm">{{ __('Position') }}</label>
                                     <select name="position" class="form-control">
-                                        <option value="admin" selected>Admin</option>
+                                        <option value="user" selected>User</option>
+                                        <option value="admin">Admin</option>
                                     </select>
                                 </div>
                                 <div class="form-group row mb-0">
