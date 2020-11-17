@@ -29,6 +29,7 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::post('/home/table', [App\Http\Controllers\HomeController::class, 'table'])->name('home.table');
+    Route::get('/home/preview/{id}', [App\Http\Controllers\HomeController::class, 'preview'])->name('home.preview');
 
     Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users')->middleware('can:admin');
     Route::post('/users/table', [App\Http\Controllers\UserController::class, 'table'])->name('users.table');

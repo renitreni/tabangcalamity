@@ -50,7 +50,11 @@
                     type: 'POST'
                 },
                 columns: [
-                    {data: 'id', name: 'id', title: 'ID'},
+                    {
+                        data: function (value) {
+                            return '<a target="_blank" href="/home/preview/' + value.id + '" class="btn btn-link">' + value.id + '</a>'
+                        }, name: 'id', title: 'ID'
+                    },
                     {data: 'fullname', name: 'fullname', title: 'Fullname'},
                     {data: 'province', name: 'province', title: 'Province'},
                     {data: 'created_at', name: 'created_at', title: 'Created at'},

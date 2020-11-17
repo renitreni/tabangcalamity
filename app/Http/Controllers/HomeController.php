@@ -27,4 +27,11 @@ class HomeController extends Controller
     {
         return DataTables::of(HelpRequest::all())->make(true);
     }
+
+    public function preview($id)
+    {
+        $data = HelpRequest::find($id);
+
+        return view('form_preview', compact('data'));
+    }
 }
