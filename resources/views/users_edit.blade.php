@@ -7,7 +7,7 @@
                 <div class="col-5 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Create New Account</h4>
+                            <h4 class="card-title">Edit/Delete Account</h4>
                             <p class="card-description">User Registration</p>
                             <form method="POST" action="{{ route('users.update') }}">
                                 @csrf
