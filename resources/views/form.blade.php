@@ -58,7 +58,7 @@
                             <select name="province" class="form-control">
                                 <option value="marinduque">Marinduque</option>
                                 <option value="marikina">Marikina</option>
-                                <option value="cagayan">Cagayan</option>
+                                <option value="cagayan province">Cagayan Province</option>
                             </select>
                         </div>
                         <div class="col-md-4 mt-2">
