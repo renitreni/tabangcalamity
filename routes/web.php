@@ -19,6 +19,12 @@ Route::get('/form', [\App\Http\Controllers\PublicController::class, 'pageForm'])
 Route::post('/form/send', [\App\Http\Controllers\PublicController::class, 'sendForm'])->name('form.send');
 
 Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);
+
+Route::get('login', function () {
+    return redirect()->route('landing');
+});
+
+Route::get('du30', '\App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::group(['middleware' => 'auth'], function () {
