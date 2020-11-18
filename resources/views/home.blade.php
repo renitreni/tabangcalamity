@@ -52,7 +52,9 @@
                 columns: [
                     {
                         data: function (value) {
-                            return '<a target="_blank" href="/home/preview/' + value.id + '" class="btn btn-link">' + value.id + '</a>'
+                            return '<a target="_blank" href="/home/preview/' + value.id + '" ' +
+                                'class="btn btn-link btn-block">' +
+                                '<i class="fa fa-eye"></i> ' + value.id + '</a>'
                         }, name: 'id', title: 'ID'
                     },
                     {data: 'fullname', name: 'fullname', title: 'Fullname'},

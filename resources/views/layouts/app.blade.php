@@ -19,6 +19,8 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{ asset('theme/purpleadmin/assets/css/style.css') }}">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{ asset('theme/purpleadmin/assets/images/favicon.ico') }}"/>
 

@@ -55,7 +55,8 @@
                 columns: [
                     {data: 'id', name: 'id', title: 'ID'},
                     {data: function (value) {
-                            return '<a href="/users/show/'+value.id+'" class="btn btn-link">'+value.name+'</a>'
+                            return '<a href="/users/show/'+value.id+'" class="btn btn-link">' +
+                                '<i class="fas fa-edit"></i> '+value.name+'</a>'
                         }, name: 'name', title: 'Name'},
                     {data: 'email', name: 'email', title: 'E-mail'},
                     {data: 'position', name: 'position', title: 'Position'},
