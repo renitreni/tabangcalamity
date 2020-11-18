@@ -71,6 +71,10 @@
                                             {{ $user->province != 'cagayan province' ?'': 'selected' }} value="cagayan province">
                                             Cagayan Province
                                         </option>
+                                        <option
+                                            value="isabela province" {{ $data->province != 'isabela province' ?'': 'selected' }}>
+                                            Isabela Province
+                                        </option>
                                     </select>
                                 </div>
                                 <div class="form-group row">

@@ -59,6 +59,7 @@
                                         <option value="marinduque" selected>Marinduque</option>
                                         <option value="marikina">Marikina</option>
                                         <option value="cagayan de oro">Cagayan Province</option>
+                                        <option value="isabela province">Isabela Province</option>
                                     </select>
                                 </div>
                                 <div class="form-group row">

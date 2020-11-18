@@ -23,9 +23,7 @@
                     </p>
                 </div>
                 <div class="col-lg-12 mx-auto">
-                    <form class="row mb-5" method="POST" action="{{ route('form.send') }}"
-                          enctype="multipart/form-data">
-                        @csrf
+                    <form class="row mb-5">
                         <div class="col-md-5 mt-2">
                             <label>Buong Pangalan</label>
                             <input name="fullname" value="{{ $data->fullname }}" class="form-control">
@@ -64,6 +62,10 @@
                                 <option
                                     value="cagayan province" {{ $data->province != 'cagayan province' ?'': 'selected' }}>
                                     Cagayan Province
+                                </option>
+                                <option
+                                    value="isabela province" {{ $data->province != 'isabela province' ?'': 'selected' }}>
+                                    Isabela Province
                                 </option>
                             </select>
                         </div>
@@ -142,6 +144,10 @@
                             </div>
                             @endif
                         </div>
+                        <button class="btn btn-block btn-info">
+                            <i class="fa fa-print" onclick="window.print()"></i>
+                            Print
+                        </button>
                     </form>
                 </div>
             </div>
