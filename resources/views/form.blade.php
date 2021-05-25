@@ -65,6 +65,7 @@
                         <div class="col-md-4 mt-2">
                             <label>Tulong na kailangan</label>
                             <select name="assistance" class="form-control">
+                                <option value="ayuda" selected>Ayuda</option>
                                 <option value="medical assistance">Medical Assitance</option>
                                 <option value="relief goods">Relief Goods</option>
                                 <option value="emergency">Emergency</option>
